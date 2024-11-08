@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotelAg13.Views.SobreDesenvolvedor"
+             Title="SobreDesenvolvedor"
+             NavigationPage.HasNavigationBar="False"
+             Background="{StaticResource Gray100}">
+    
+    <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="10">
+        <Label Text="Sobre o Aplicativo" 
+               FontFamily="Shrikhand" 
+               FontSize="30" 
+               HorizontalOptions="Center"
+               TextColor="{StaticResource Primary}"/>
+        <Frame Padding="10" Margin="10">
+            <VerticalStackLayout>
+                <Label Text="Este aplicativo foi desenvolvido para auxiliar no gerenciamento de hospedagens. &#10;
+                       " 
+                       FontSize="15" 
+                       TextColor="{StaticResource Secondary}"/>
+
+                <Label Text="Desenvolvedor: Vitória Régia &#10; " 
+                       FontSize="15" 
+                       TextColor="{StaticResource Secondary}"/>
+
+                <Label Text="Ano de Desenvolvimento: 2024 &#10;" 
+                       FontSize="15" 
+                       TextColor="{StaticResource Secondary}"/>
+
+                <Label Text="Versão 1.0.0" 
+                       FontSize="15" 
+                       TextColor="{StaticResource Secondary}"/>
+
+            </VerticalStackLayout>
+        </Frame>
+        
+        <Button Text="Voltar" Clicked="OnVoltarButtonClicked"/>
+        
+    </VerticalStackLayout>
+</ContentPage>
